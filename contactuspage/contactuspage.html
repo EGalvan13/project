@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="contactuspagelayout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="info"><img src="logo.png" alt="logo" id="logo" />
+        <h1>Esau's Pet Store</h1>
+    </div>
+    <div id="list">
+        <nav>
+            <ul>
+                <li><a href="https://esaugalvan.xyz/project/homepage.html">Home</a></li>
+                <li><a href="https://esaugalvan.xyz/project/productpage/productpage.html">Products</a></li>
+                <li><a href="https://esaugalvan.xyz/project/petservicespage/petservicespage.html">Pet Services</a></li>
+                <li><a href="https://esaugalvan.xyz/project/employmentpage/empolymentpage.html">Employment</a></li>
+                <li><a href="https://esaugalvan.xyz/project/aboutuspage/aboutuspage.html">About Us</a></li>
+                <li><a href="https://esaugalvan.xyz/project/contactuspage/contactuspage.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>        
+    <div id="superman">
+        <h2>You can also reach us at:</h2>
+        <p>Email: superman132@yahoo.com</p><br>
+        <p>Phone Number: (123)123-1234</p><br>
+        <p>Location: McAllen Texas</p><br>
+        <img src="locationmap.PNG">
+    </div>
+    <div id="contactimage"><img src="contactusperson.png"></div>
+    <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+        <script type="text/javascript">
+            function ValidateForm(frm) {
+                if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                return true;
+            }
+        </script>
+
+        <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+            <h1 style="text-align: center;">Contact Us</h1>
+            <tr>
+                <td>
+                    
+                    <label for="Name">Name:</label>
+                </td>
+                <td>
+                    <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="PhoneNumber">Phone number:</label>
+                </td>
+                <td>
+                    <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="FromEmailAddress">Email address*:</label>
+                </td>
+                <td>
+                    <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Comments">Comments:</label>
+                </td>
+                <td>
+                    <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input name="skip_Submit" type="submit" value="Submit" />
+                    <input type="reset" value="Erase">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <footer>Copyright © 2021 Esau's Pet Store<br><a href="http://csnet.southtexascollege.edu/localuser/egalva25/" >Go Back to Homepage - Esau Galvan</a></footer>
+</body>
+
+</html>

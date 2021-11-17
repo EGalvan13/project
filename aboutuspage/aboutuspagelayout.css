@@ -1,0 +1,106 @@
+body{
+    background-color: whitesmoke;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+#info img, #info h1{
+    display: inline-block;
+    color: red;
+    
+}
+#info img{
+    max-width: 50px;
+    max-height: 50px;
+}
+nav{
+    position: absolute;
+    list-style:none;
+    text-align:center;
+    margin-top: 0px;
+    background: darkblue;
+    padding: 15px;
+    width: 1857px;
+}
+nav ul{
+    
+    display:inline;
+    
+}
+nav li{
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+a:link, a:visited{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+#firstsection{
+    text-align: left;
+    text-decoration: none;
+    margin-top: 100px;
+    background-color: lightblue;
+    height: 270px;
+}
+#firstsection img{
+    float: right;
+    margin-right: 15px;
+}
+#firstsection p{
+font-size:22px;
+text-align: center;
+}
+#secsection{
+    text-align: right;
+    text-decoration: none;
+    margin-top: 100px;
+    background-color: lightskyblue;
+    height: 270px;
+}
+#secsection img{
+    height: 270px;
+    float: left;
+    margin-left: 275px;
+}
+#secsection p{
+font-size:22px;
+text-align: center;
+}
+#thirdsection{
+    text-align: left;
+    text-decoration: none;
+    margin-top: 100px;
+    background-color: lightsteelblue;
+    height: 270px;
+}
+#thirdsection img{
+    height: 270px;
+    float: right;
+    margin-right: 200px;
+}
+#thirdsection p{
+font-size:22px;
+text-align: center;
+}
+#thirdsection h1{
+    text-align: center;
+    }
+    #secsection h1{
+        text-align: center;
+        }
+        #firstsection h1{
+            text-align: center;
+            }
+            footer{
+                margin-top: 100px;
+                position: absolute;
+                background-color: darkblue;
+                width: 99.1%;
+                height: 100px;
+                color: whitesmoke;
+            }

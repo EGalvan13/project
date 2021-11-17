@@ -1,0 +1,139 @@
+body{
+    background-color: whitesmoke;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+#info img, #info h1{
+    display: inline-block;
+    color: red;
+    
+}
+#info img{
+    max-width: 50px;
+    max-height: 50px;
+}
+nav{
+    position: absolute;
+    list-style:none;
+    text-align:center;
+    margin-top: 0px;
+    background: darkblue;
+    padding: 15px;
+    width: 1857px;
+}
+nav ul{
+    
+    display:inline;
+    
+}
+nav li{
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+a:link, a:visited{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+form{
+    margin-top: 0px;
+    float: left;
+}
+
+#personalinfo{
+    float: left;
+    margin-top: 50px;
+}
+label.question {
+
+    width: 225px;
+
+    float: left;
+
+    text-align: left;
+
+    font-weight: bold;
+
+}
+input,
+textarea,
+select,
+button {
+
+    border: 1px solid #000;
+
+    padding: 3px;
+
+}
+
+#buttons {
+    position: absolute;
+    float: left;
+    margin-top: 485px;
+
+}
+
+#errors {
+
+    color: red;
+
+    font-weight: bold;
+
+    font-size: larger;
+}
+#dog1{
+    margin-top: 100px;
+    float: right;
+    margin-right: 300px;
+}
+#dog1 img{
+    width: 275px;
+    height: 275px;
+    color: black;
+}
+#dog2{
+    margin-top: 100px;
+    float: right;
+    margin-right: 50px;
+}
+#dog2 img{
+    width: 275px;
+    height: 275px;
+    color: black;
+}
+#dog3{
+    margin-top: 100px;
+    float: right;
+    margin-right: 50px;
+}
+#dog3 img{
+    width: 275px;
+    height: 275px;
+    color: black;
+}
+footer{
+    position: absolute;
+    background-color: darkblue;
+    width: 99%;
+    height: 100px;
+    margin-top: 600px;
+    color: whitesmoke;
+
+}
+#titleh2{
+    font-size: 20px;
+    margin-top: 130px;
+    float: left;
+}
+#dropdown222{
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 123px;
+    float: left;
+}

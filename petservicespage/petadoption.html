@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption</title>
+    <link href="petadoptionlayout.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        functiondemo(); {
+            alert("Welcome users!");
+            document.write("Have a Nice day!");
+        }
+    </script>
+</head>
+
+<body>
+    <div id="info"><img src="logo.png" alt="logo" id="logo" />
+        <h1>Esau's Pet Store</h1>
+    </div>
+    <div id="list">
+        <nav>
+            <ul>
+                <li><a href="https://esaugalvan.xyz/project/homepage.html">Home</a></li>
+                <li><a href="https://esaugalvan.xyz/project/productpage/productpage.html">Products</a></li>
+                <li><a href="https://esaugalvan.xyz/project/petservicespage/petservicespage.html">Pet Services</a></li>
+                <li><a href="https://esaugalvan.xyz/project/employmentpage/empolymentpage.html">Employment</a></li>
+                <li><a href="https://esaugalvan.xyz/project/aboutuspage/aboutuspage.html">About Us</a></li>
+                <li><a href="https://esaugalvan.xyz/project/contactuspage/contactuspage.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h2 id="titleh2">Select a Pet:</h2>
+    <form>
+        <select name="dropdown" id="dropdown222">
+            <option value="dogop1">Taj (Dog)</option>
+            <option value="dogop2">Great (Dog)</option>
+            <option value="dogop3">Christ (Dog)</option>
+        </select>
+    </form>
+
+    <form name="gbForm" method="post" action="URL_to_script">
+
+        <output id="errors"></output>
+        <fieldset style="background-color: lightgray;" id="personalinfo">
+
+            <legend>Personal Information</legend>
+
+            <p>
+
+                <label class="question" for="firstname">
+
+                    First Name</label>
+
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" size="50" required>
+
+            </p>
+            <p>
+
+                <label class="question" for="lastname">
+
+                    Last Name</label>
+
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" size="50" required>
+
+            </p>
+            <p>
+
+                <label class="question" for="Address">
+
+                    Address</label>
+
+                <input type="text" id="Address" name="Address" placeholder="Address" size="50" required>
+
+            </p>
+            <p>
+
+                <label class="question" for="City">
+
+                    City</label>
+
+                <input type="text" id="City" name="City" placeholder="City" size="50" required>
+
+            </p>
+            <p>
+
+                <label class="question" for="State">
+
+                    State</label>
+
+                <input type="text" id="State" name="State" placeholder="State" size="50" required>
+
+            </p>
+            <p>
+
+                <label class="question" for="zipcode">
+
+                    Zip Code</label>
+
+                <input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" size="50" required>
+
+            </p>
+            <p>
+
+                <label class="question" for="Phone">
+
+                    Phone</label>
+
+                <input type="text" id="Phone" name="Phone" placeholder="Phone" size="50" required>
+
+            </p>
+            <p>
+
+                <label class="question" for="email">
+
+                    Email address</label>
+
+                <input type="email" id="the_email" name="the_email" placeholder="Email address" size="50"
+                    requiredautofocus>
+
+            </p>
+        </fieldset>
+
+        <div id="buttons">
+            <button type="button" onclick="myFunction()">Submit</button>or
+
+            <input type="reset" value="Erase and Start Over">
+
+        </div>
+        <script>
+            var pressedButton = document.getElementsByTagName("button")[0];
+            pressedButton.addEventListener("click", function (event) {
+                alert("Thank you for your adopting a pet! We will send you an email about the following steps you will need to take.")
+            })
+            function myFunction() {
+                var x = document.getElementById("dropdown222");
+                x.remove(x.selectedIndex);
+            }
+        </script>
+
+        <div id="dog1">
+            <img src="dog1.jpg"><br>
+            Taj
+        </div>
+        <div id="dog2">
+            <img src="dog2.jpg"><br>
+            Great
+        </div>
+        <div id="dog3">
+            <img src="dog3.jpg"><br>
+            Christ
+        </div>
+        <footer>Copyright © 2021 Esau's Pet Store<br><a href="http://csnet.southtexascollege.edu/localuser/egalva25/" >Go Back to Homepage - Esau Galvan</a></footer>
+
+</body>
+
+</html>

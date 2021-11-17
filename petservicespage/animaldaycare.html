@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Day Care</title>
+    <link href="animaldaycareslayout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="info"><img src="logo.png" alt="logo" id="logo" />
+        <h1>Esau's Pet Store</h1>
+    </div>
+    <div id="list">
+        <nav>
+            <ul>
+                <li><a href="https://esaugalvan.xyz/project/homepage.html">Home</a></li>
+                <li><a href="https://esaugalvan.xyz/project/productpage/productpage.html">Products</a></li>
+                <li><a href="https://esaugalvan.xyz/project/petservicespage/petservicespage.html">Pet Services</a></li>
+                <li><a href="https://esaugalvan.xyz/project/employmentpage/empolymentpage.html">Employment</a></li>
+                <li><a href="https://esaugalvan.xyz/project/aboutuspage/aboutuspage.html">About Us</a></li>
+                <li><a href="https://esaugalvan.xyz/project/contactuspage/contactuspage.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="superdog"><img src="movingdog.gif"></div>
+    <div id="supercat"><img src="movingcat.gif"></div>
+    <div class="container mt-5" id="app">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 border p-4 shadow bg-light">
+                <div class="col-12">
+                    <h3 class="fw-normal text-secondary fs-4 text-uppercase mb-4">Appointment form</h3>
+                </div>
+                <form action="">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="date" class="form-control" placeholder="Enter Date">
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select" id="dropdown222">
+                                <option selected>Times for the Appointment</option>
+                                <option value="1">8:00am</option>
+                                <option value="2">9:00am</option>
+                                <option value="3">10:00am</option>
+                                <option value="4">11:00am</option>
+                                <option value="5">12:00am</option>
+                                <option value="6">1:00pm</option>
+                                <option value="7">2:00pm</option>
+                                <option value="7">3:00pm</option>
+                                <option value="7">4:00pm</option>
+                                <option value="7">5:00pm</option>
+                                <option value="7">6:00pm</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <select class="form-select">
+                                <option selected>Type of Pet</option>
+                                <option value="1">Dog</option>
+                                <option value="2">Cat</option>
+                                <option value="3">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12 mt-5">
+                            <button type="button" class="btn btn-primary float-end" onclick="myFunction()">Book Appointment</button>
+                            <input type="reset" value="Erase">
+                            <script>
+                                var pressedButton = document.getElementsByTagName("button")[0];
+                                pressedButton.addEventListener("click", function (event) {
+                                    alert("Thank you for your form! We will be waiting for you.")
+                                })
+                                function myFunction() {
+                                    var x = document.getElementById("dropdown222");
+                                    x.remove(x.selectedIndex);
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>Copyright © 2021 Esau's Pet Store<br><a href="http://csnet.southtexascollege.edu/localuser/egalva25/" >Go Back to Homepage - Esau Galvan</a></footer>
+
+</body>
+
+</html>
